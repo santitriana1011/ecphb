@@ -1,0 +1,46 @@
+{
+  "name": "soportes_especializados",
+  "plural": "soportes_especializados",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Duracion": {
+      "type": "string"
+    },
+    "Onsite": {
+      "type": "string"
+    },
+    "Usuario": {
+      "type": "string"
+    },
+    "Departamento": {
+      "type": "string"
+    },
+    "Clasificacion": {
+      "type": "string"
+    },
+    "Software": {
+      "type": "string"
+    },
+    "Flujo": {
+      "type": "string"
+    },
+    "Actividad": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

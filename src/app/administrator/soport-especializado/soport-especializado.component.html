@@ -1,0 +1,122 @@
+<form>
+<base href="/" />
+<div class="container">
+  <div class="ui-fluid">
+  <div class="jumbotron text-center" style="margin-top:80px;">
+    <form [formGroup]="adminSoportEsp">
+    <h1>Creacion de Soportes Especializados</h1>
+
+    <div class="alert alert-warning alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><i class="fas fa-exclamation-triangle"></i> Precaucion!</strong>
+      Por favor ingrese los datos correctamente para evitar futuros errores.
+    </div>
+   
+      <div class="row" style="margin-top: 8px;">
+        <div class="col">
+          <label>Fecha:</label>
+          <p-calendar name="fecha"
+          placeholder="Ingrese la Fecha del Soporte"
+          formControlName="Fecha"
+          showButtonBar="true"
+          [showWeek]="true"
+          [(ngModel)]="objContent.Fecha"></p-calendar>
+        </div>
+
+        <div class="col">
+          <label>Duracion:</label>
+          <input pInputText type="text" formControlName="Duracion"
+          placeholder="Ingresar con Formato horas:minutos"
+          [(ngModel)]="objContent.Duracion">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 8px;">
+        <div class="col">
+          <label>Onsite:</label>
+          <input
+                type="text"
+                pInputText
+                formControlName="Onsite"
+                placeholder="Id de quien hizo el Mantenimiento"
+                [(ngModel)]="objContent.Onsite">
+        </div>
+        <div class="col">
+          <label>Usuario:</label>
+          <input
+                type="text"
+                pInputText
+                formControlName="Usuario"
+                placeholder="Id del Usuario"
+                [(ngModel)]="objContent.Usuario">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 8px;">
+        <div class="col">
+          <label>Seleccione el Departamento:</label>
+          <p-dropdown
+          [options]="departamento"
+          formControlName="Departamento"
+          placeholder="Seleccione Departamento..."
+          [(ngModel)]="objContent.Departamento"></p-dropdown>
+        </div>
+
+        <div class="col">
+          <label>Flujo de Trabajo:</label>
+          <input pInputText type="text" formControlName="Flujo"
+                placeholder="Ingrese aqui el flujo de trabajo"
+                [(ngModel)]="objContent.Flujo">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 8px;">
+        <div class="col">
+          <label>Seleccione la Clasificacion de la Sesion:</label>
+          <div>
+            <p-dropdown
+              [options]="clasificacion"
+              formControlName="Clasificacion"
+              placeholder="Seleccione Clasificacion..."
+              [(ngModel)]="objContent.Clasificacion"></p-dropdown>
+          </div>
+        </div>
+
+        <div class="col">
+          <label>Software:</label>
+          <input pInputText type="text" formControlName="Software"
+                placeholder="Ingrese aqui el Software Trabajado"
+                [(ngModel)]="objContent.Software"
+                >
+            </div>
+
+        </div>
+
+      <div class="row" style="margin-top: 8px;">
+        <div class="col">
+          <label>Actividades Realizadas:</label>
+          <input pInputText type="text" formControlName="Actividad"
+                placeholder="Ingrese aqui el Software Trabajado"
+                [(ngModel)]="objContent.Actividad">
+            </div>
+        </div>
+
+
+      </form>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col">
+          <p-button type="button" icon="fa fa-times" label="Cancelar"
+            routerLink="/administrator" routerLinkActive="active"></p-button>
+          <p-button  icon="fa fa-times" label="Guardar"
+            (click)="addSoporte()" styleClass="btn btn-success ml-3"
+            [disabled]="!isFormValidRelation"></p-button>
+        </div>
+      </div>
+
+</div>
+</div>
+</div>
+</form>
+
+<p-toast key="PopUp" [style]="{marginTop: '80px'}"></p-toast>

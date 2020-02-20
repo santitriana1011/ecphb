@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "10.11.163.16",
+    "port": 3306,
+    "database": "analiticati",
+    "password": "Landmark1",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

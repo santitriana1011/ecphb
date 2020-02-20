@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <base href="/">
+</head>
+<body>
+
+  <div class="jumbotron text-center" style="width:100%; height:160px;">
+    <h1 style="margin-top: -30px;">Tableros de Licenciamiento</h1>
+    <p>A continuacion Seleccione el tablero que desea visualizar dando click en el boton "Ver Tablero"</p>
+  </div>
+    
+  <div class="row justify-content-center" style="margin-top: 2%; width: 100%;">
+    <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Control de Licencias" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/ControlLicencias.PNG">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/control-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+
+  <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Uso de Licencias" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/UsoLicencias.PNG">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/uso-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+
+  <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Informe de Licencias" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/InformeLicencias.PNG">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/informe-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+    </div>
+  </div>
+    
+  <div class="row justify-content-center" style="margin-bottom: 4%; margin-top: 2%; width: 100%;">
+    <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Negacion de Licencias" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/NegacionLicencias.PNG">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/negacion-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+
+  <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Uso Licencias por Feature" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/UsoLicenciasFeature.png">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/uso-feature-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+
+  <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Verificar Licencias" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/VerificarLicencias.PNG">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/verificar-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center" style="margin-bottom: 4%; margin-top: 2%; width: 100%;">
+    <div>
+    <div class="col col-sm-1" style="text-align: center; margin-top: 10% !important; margin-left: 5%;">
+      <p-card header="Licencias New" [style]="{width: '310px'}" styleClass="ui-card-shadow">
+        <p-header>
+            <img  src="Card" src="assets/images/Licencias_New.png">
+        </p-header>
+        <p-footer>
+          <a class="btn btn-outline-success" routerLink="/negacion-licencias" routerLinkActive="active"><i class="far fa-chart-bar"></i> Ver Tablero</a>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+  </div>
+
+    <router-outlet></router-outlet>
+    
+</body>
+</html>

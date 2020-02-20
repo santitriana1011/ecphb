@@ -1,0 +1,35 @@
+<base href="/">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"><strong>Tableros de Servicio</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Disponibles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/licencias" routerLinkActive="active">Licencias</a>
+          <a class="dropdown-item" routerLink="/requerimientos" routerLinkActive="active">Requerimientos</a>
+          <a class="dropdown-item" routerLink="/incidentes" routerLinkActive="active">Incidentes</a>
+          <a class="dropdown-item" routerLink="/efectividadServicio">Efectividad de Servicio</a>
+        </div>
+      </li>
+    </ul>
+
+    <a class="btn btn-outline-dark mr-2 "routerLink="/homepage" routerLinkActive="active"><i class="fas fa-home"></i>  Home<span class="sr-only">(current)</span></a>
+    <a class="btn btn-outline-success mr-2 "routerLink="/administrator" routerLinkActive="active"><i class="fas fa-user"></i>  Admin<span class="sr-only">(current)</span></a>
+    <button class="btn btn-outline-danger my-2 my-sm-0" routerLink="/login" routerLinkActive="active"><i class="fas fa-sign-out-alt"></i>Log Out</button>
+
+  </div>
+</nav><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+<router-outlet></router-outlet>
+
+

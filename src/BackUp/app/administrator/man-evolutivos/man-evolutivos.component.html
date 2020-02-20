@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<base href="/">
+
+<div class="container">
+    <div class="jumbotron text-center" style="margin-top:100px;">
+            <h1>Creacion de Mantenimiento Evolutivo</h1>
+
+            <div class="alert alert-warning alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong><i class="fas fa-exclamation-triangle"></i> Precaucion!</strong> Por favor ingrese los datos correctamente para evitar futuros errores.
+            </div>
+            <form>
+              <div class="row" style="margin-top: 8px;">
+                <div class="col">
+                      <label>Fecha:</label>
+                  <input type="date" class="form-control" placeholder="Fecha del Mantenimiento Evolutivo">
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 8px;">
+                      <div class="col">
+                          <label>Horas:</label>
+                        <input type="number" class="form-control" placeholder="Numero de Horas invertidas en el Mantenimiento">
+                      </div>
+                      <div class="col">
+                            <label>Actividad:</label>
+                        <input type="text" class="form-control" placeholder="Actividad Realizada en el Mantenimiento">
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 8px;">
+                          <div class="col">
+                              <label>Aplicacion:</label>
+                            <input type="text" class="form-control" placeholder="Aplicacion a la que se le hace el manteminiento">
+                          </div>
+
+                          <div class="col">
+                                  <label>Onsite:</label>
+                              <input type="text" class="form-control" placeholder="Ingrese aqui la persona o personas que hizo el mantenimiento">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                          <label>Tipo:</label>
+                          <div class="form-group">
+                                  <select class="form-control" id="Departamento">
+                                    <option disabled>Requerimiento</option>
+                                    <option selected>Mantenimiento</option>
+                                  </select>
+                                </div>
+                      </div>
+
+
+
+                          <a class="btn btn-primary" style="margin-top: 25px; margin-right: 8px; width: 302px; color: white;"><i class="far fa-save"></i> Crear</a>
+                          <a class="btn btn-danger" routerLink="/administrator" routerLinkActive="active" style="margin-top: 25px; width: 302px; color: white;"><i class="fas fa-times"></i> Volver</a>
+
+            </form>
+            <!-- <form>
+                    <div class="row" style="margin-top: 8px;">
+                      <div class="col">
+                          <label>Mes:</label>
+                        <input type="text" class="form-control" placeholder="Mes del Mantenimiento Evolutivo">
+                      </div>
+                      <div class="col">
+                            <label>Fecha:</label>
+                        <input type="date" class="form-control" placeholder="Fecha del Mantenimiento Evolutivo">
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 8px;">
+                            <div class="col">
+                                <label>Horas:</label>
+                              <input type="number" class="form-control" placeholder="Numero de Horas invertidas en el Mantenimiento">
+                            </div>
+                            <div class="col">
+                                  <label>Actividad:</label>
+                              <input type="text" class="form-control" placeholder="Actividad Realizada en el Mantenimiento">
+                            </div>
+                          </div>
+
+                          <div class="row" style="margin-top: 8px;">
+                                <div class="col">
+                                    <label>Aplicacion:</label>
+                                  <input type="text" class="form-control" placeholder="Aplicacion a la que se le hace el manteminiento">
+                                </div>
+
+                                <div class="col">
+                                        <label>Onsite:</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese aqui la persona o personas que hizo el mantenimiento">
+                                  </div>
+                              </div>
+
+                                <a class="btn btn-primary" style="margin-top: 25px; margin-right: 8px; width: 302px; color: white;"><i class="far fa-save"></i> Crear</a>
+                                <a class="btn btn-danger" routerLink="/administrator" routerLinkActive="active" style="margin-top: 25px; width: 302px; color: white;"><i class="fas fa-times"></i> Volver</a>
+                  </form> -->
+          </div>
+   
+</div>
+
+<router-outlet></router-outlet>

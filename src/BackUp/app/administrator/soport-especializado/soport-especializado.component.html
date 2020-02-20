@@ -1,0 +1,89 @@
+<base href="/">
+        <div class="container">
+                <div class="jumbotron text-center" style="margin-top:80px;">
+                        <h1>Creacion de Soportes Especializados</h1>
+
+                        <div class="alert alert-warning alert-dismissible">
+                          <button type="button" class="close" data-dismiss="alert">&times;</button>
+                          <strong><i class="fas fa-exclamation-triangle"></i> Precaucion!</strong> Por favor ingrese los datos correctamente para evitar futuros errores.
+                        </div>
+                        <form>
+                                <div class="row" style="margin-top: 8px;">
+
+                                    <div class="col">
+                                         <label>Fecha:</label>
+                                         <input type="date" class="form-control" placeholder="Fecha del Soporte Especializado">
+                                    </div>
+
+                                        <div class="col">
+                                            <label>Duracion:</label>
+                                             <input type="text" class="form-control" placeholder="Ingresar con Formato horas:minutos">
+                                        </div>
+                                  
+                                </div>
+    
+                                <div class="row" style="margin-top: 8px;">
+                                        <div class="col">
+                                            <label>Onsite:</label>
+                                          <input type="text" class="form-control" placeholder="Ingrese el nombre completo del empleado que atendio">
+                                        </div>
+                                        <div class="col">
+                                              <label>Usuario:</label>
+                                          <input type="text" class="form-control" placeholder="Ingrese el nombre completo del usuario atendido">
+                                        </div>
+                                </div>
+    
+                                      <div class="row" style="margin-top: 8px;">
+                                            <div class="col">
+                                                <label>Seleccione el Departamento:</label>
+                                                <div class="form-group">
+                                                        <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                                                        <select class="form-control" id="Departamento">
+                                                          <option>Exploración</option>
+                                                          <option>Perforacion</option>
+                                                          <option>Yacimientos</option> 
+                                                          <option>Exploración y Perforacion</option> 
+                                                        </select>
+                                                      </div>
+                                            </div>
+    
+                                            <div class="col">
+                                                    <label>Flujo de Trabajo:</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese aqui el flujo de trabajo">
+                                              </div>
+                                       </div>
+
+                                       <div class="row" style="margin-top: 8px;">
+                                            <div class="col">
+                                                <label>Seleccione la Clasificacion de la Sesion:</label>
+                                                <div class="form-group">
+                                                        <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                                                        <select class="form-control" id="Clasificacion">
+                                                          <option>IA</option>
+                                                          <option>IIA</option>
+                                                          <option>IIIA</option>  
+                                                        </select>
+                                                      </div>
+                                            </div>
+    
+                                            <div class="col">
+                                                    <label>Software:</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese aqui el Software Trabajado">
+                                              </div>
+                                       </div>
+
+                                       <div class="row" style="margin-top: 8px;">
+                                           
+                                            <div class="col">
+                                                    <label>Actividades Realizadas:</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese aqui las actividades que realizo">
+                                              </div>
+                                       </div>
+    
+                                        <a class="btn btn-primary" style="margin-top: 25px; margin-right: 8px; width: 302px; color: white;"><i class="far fa-save"></i> Crear</a>
+                                        <a class="btn btn-danger" style="margin-top: 25px; width: 302px; color: white;" routerLink="/administrator" routerLinkActive="active"><i class="fas fa-times"></i> Volver</a>
+                              </form>
+                      </div>
+               
+        </div>
+        <router-outlet></router-outlet>

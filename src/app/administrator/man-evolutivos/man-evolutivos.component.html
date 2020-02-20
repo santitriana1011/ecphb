@@ -1,0 +1,79 @@
+<form>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<base href="/">
+<div class="container">
+  <div class="ui-fluid">
+    <div class="jumbotron text-center" style="margin-top:100px;">
+      <form [formGroup]="adminMantEvol">
+            <h1>Creacion de Mantenimiento Evolutivo</h1>
+
+            <div class="alert alert-warning alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong><i class="fas fa-exclamation-triangle"></i> Precaucion!</strong> Por favor ingrese los datos correctamente para evitar futuros errores.
+            </div>
+           
+              <div class="row" style="margin-top: 8px;">
+                <div class="col">
+                      <label>Fecha:</label>
+                  <p-calendar name="fecha" placeholder="Ingrese la Fecha del Mantenimiento" formControlName="Fecha"
+                    [showWeek]="true"
+                    [(ngModel)]="objContent.Actividad"></p-calendar>
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 8px;">
+                      <div class="col">
+                          <label>Horas:</label>
+                        <p-spinner placeholder="Indique las horas invertidas en el Mantenimiento" formControlName="Horas"
+                        [(ngModel)]="objContent.Aplicacion"></p-spinner>
+                      </div>
+                      
+                      <div class="col">
+                            <label>Actividad:</label>
+                            <input type="text" pInputText
+                            formControlName="Actividad"
+                            placeholder="Indique la actividad Realizada en el Mantenimiento" [(ngModel)] = "objContent.Fecha">
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 8px;">
+                          <div class="col">
+                              <label>Aplicacion:</label>
+                            <input type="text" pInputText
+                            formControlName="Aplicacion"
+                            placeholder="Apliacion a la que se le hace el Mantenimiento" [(ngModel)] = "objContent.Horas">
+                          </div>
+
+                          <div class="col">
+                                  <label>Onsite:</label>
+                              <input type="text" pInputText
+                              formControlName="Onsite"
+                              placeholder="Ingrese aqui la persona que hizo el Mantenimiento"
+                              [(ngModel)]="objContent.Onsite">
+                            </div>
+
+                        </div>
+
+                     
+
+                    </form>
+                    <div class="row" style="margin-top: 30px;">
+                      <div class="col">
+                        <p-button type="button" icon="fa fa-times" label="Cancelar"
+                        routerLink="/administrator" routerLinkActive="active"></p-button>
+                        
+                        <p-button icon="fa fa-times" label="Guardar"
+                        (click)="addMantenimiento()" styleClass="btn btn-success ml-3"
+                        [disabled]="!isFormValidRelation"></p-button>
+                      </div>
+                    </div>
+            
+            
+          </div>
+        </div>  
+      </div>
+
+    </form>
+
+<p-toast key="PopUp" [style]="{marginTop: '80px'}"></p-toast>

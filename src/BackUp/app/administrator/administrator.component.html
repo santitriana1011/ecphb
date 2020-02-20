@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>App-Controles Mensuales</title>
+    <base href="/">
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>Bienvenido a la App Controles Halliburton</h1>
+        <p>A continuacion Escoja el tipo de control que desea agregar</p>
+      </div>
+
+      <div class="container" style="margin-bottom: 9%; margin-top: 9%;">
+        <div class="row">
+          <div class="col-sm-4">
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Soportes Especializados</h5>
+                    <p class="card-text" style="text-align: center;">
+                      <a class="btn btn-outline-danger" routerLink="/soportEspecializado" routerLinkActive="active"><i class="far fa-edit"></i> Comenzar</a>
+                    </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Mantenimientos Evolutivos</h5>
+                    <p class="card-text" style="text-align: center;">
+                      <a class="btn btn-outline-danger" routerLink="/manEvolutivos" routerLinkActive="active"><i class="far fa-edit"></i> Comenzar</a>
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card">
+                  <div class="card-body" style="text-align: center;">
+                    <h5 class="card-title">Requerimientos Especiales</h5>
+                    <p class="card-text" style="text-align: center;">
+                      <a class="btn btn-outline-danger" routerLink="/reqEspeciales" routerLinkActive="active"><i class="far fa-edit"></i> Comenzar</a>
+                    </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <router-outlet></router-outlet>
+      
+</body>
+</html>

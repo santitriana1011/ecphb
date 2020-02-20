@@ -1,0 +1,37 @@
+{
+  "name": "mantenimientos",
+  "plural": "mantenimientos",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Horas": {
+      "type": "number"
+    },
+    "Actividad": {
+      "type": "string"
+    },
+    "Onsite": {
+      "type": "string"
+    },
+    "Aplicacion": {
+      "type": "string"
+    },
+    "Tipo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
